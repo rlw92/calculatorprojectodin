@@ -20,20 +20,21 @@ document.querySelector("#minus").addEventListener("click",()=>{z=minus;dis.push(
 document.querySelector("#divide").addEventListener("click",()=>{z=divide;dis.push(x); x=0; document.querySelector(".screen").textContent += "/";});
 document.querySelector("#equal").addEventListener("click",()=>{dis.push(x);l=z();document.querySelector(".screen").textContent = l; x=l; dis=[];})
 document.querySelector("#clear").addEventListener("click",()=>{x=0;dis=[];document.querySelector(".screen").textContent = "";})
+
 function plus(){
 z = plus;
-   return x+y;
+   return +dis[0] + +dis[1];
    console.log(x+y);
 }
 
 function minus(){
     z= minus;
-    return x-y;
+    return +dis[0] - +dis[1];
 }
 
 function divide(){
     z= divide;
-    return x/y;
+    return +dis[0] / +dis[1];
 }
 
 function multiply(){
