@@ -1,9 +1,7 @@
 let x=0;
-let y=0;
 let z=plus;
 let l;
 let dis=[0];
-let t=0;
 let screen = document.querySelector(".screen");
 
 
@@ -27,7 +25,7 @@ document.querySelector("#equal").addEventListener("click",()=>{l=ongo();document
 document.querySelector("#clear").addEventListener("click",()=>{x=0;dis=[0];z=plus;document.querySelector(".screen").textContent = "";})
 
 function ongo(){
-    if(z===divide && +x===0){
+    if(z===divide && +x===0){alert("Can not divide by Zero, press clear to continue")
 return "Unable to divide by Zero big man.";}
     else{
      dis.push(x);
@@ -41,7 +39,7 @@ function plus(){
 z = plus;
    
    return +dis[0] + +dis[1];
-   console.log(y);
+   
 }
 
 function minus(){
