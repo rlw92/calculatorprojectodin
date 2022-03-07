@@ -18,6 +18,7 @@ Update:
 So I have managed to get this bad boy working to the specifications set out on the odin project page. 
 The calculator can take in multiple sums and operators and output the correct answer.
 If a user tries to divide by zero an error message is displayed and the user is encouraged to clear and start again.
+The one problem is that any decimal places answers are round to nearest full number.
 My head is completely fried at the moment from this project so I think for my sanity it would be best to continue on with the course.
 In the future I think it would be wise to revisit this, clean it up and add the extra functions.
 
