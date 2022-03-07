@@ -27,8 +27,8 @@ document.querySelector("#equal").addEventListener("click",()=>{l=ongo();document
 document.querySelector("#clear").addEventListener("click",()=>{x=0;dis=[0];z=plus;document.querySelector(".screen").textContent = "";})
 
 function ongo(){
-    if(z===divide && +x===0){document.querySelector(".screen").textContent = "Can not divide by zero buddy.";
-return "NOPE";}
+    if(z===divide && +x===0){
+return "Unable to divide by Zero big man.";}
     else{
      dis.push(x);
      y= z();  
