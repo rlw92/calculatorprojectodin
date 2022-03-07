@@ -21,7 +21,7 @@ document.querySelector("#multiply").addEventListener("click",()=>{ongo();z=multi
 document.querySelector("#plus").addEventListener("click",()=>{ongo();z=plus; x=0; document.querySelector(".screen").textContent += "+";});
 document.querySelector("#minus").addEventListener("click",()=>{ongo();z=minus; x=0; document.querySelector(".screen").textContent += "-";});
 document.querySelector("#divide").addEventListener("click",()=>{ongo();z=divide; x=0; document.querySelector(".screen").textContent += "/";});
-document.querySelector("#equal").addEventListener("click",()=>{l=ongo();document.querySelector(".screen").textContent = l; x=0;z=plus;})
+document.querySelector("#equal").addEventListener("click",()=>{l=ongo();document.querySelector(".screen").textContent = l.toFixed(0);; x=0;z=plus;})
 document.querySelector("#clear").addEventListener("click",()=>{x=0;dis=[0];z=plus;document.querySelector(".screen").textContent = "";})
 
 function ongo(){
